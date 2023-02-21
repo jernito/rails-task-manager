@@ -1,0 +1,8 @@
+<h1>EUREKA</h1>
+
+ <li><%= @task.details %></li>
+ <button><%= link_to"homepage", tasks_path %></button>
+ <button><%= link_to "Delete",
+  task_path(@task),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+  </button>
